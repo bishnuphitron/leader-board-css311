@@ -96,12 +96,31 @@ top blog styles
 /* -------------------------
     courses style
 ---------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    /* border: 1px solid red; */
+    padding: 17px;
+    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 15px;
+}
 .course .course-banner img{
     width: 224px;
     height: 104px;
 }
 .course-info{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    border-radius: 14px;
+    padding: 6px;
+
 }
 
 .fa-star{
