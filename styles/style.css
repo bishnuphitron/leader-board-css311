@@ -11,17 +11,21 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     width: 870px;
     background-color: #FFFFFF;
     padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
 }
 
 hr {
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 
 /* ----------------------
@@ -62,6 +66,11 @@ top players style
 /* ----------------
 top blog styles
 -------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
 .blog{
     display: flex;
 }
